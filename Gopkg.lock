@@ -2,6 +2,17 @@
 
 
 [[projects]]
+  digest = "1:4f40ff9db4d2d1a6acb8b546e20febf96e62380bb7486b7a09b1d0befe8bb603"
+  name = "github.com/Lambda-NIC/faas-provider"
+  packages = [
+    "auth",
+    "types",
+  ]
+  pruneopts = "UT"
+  revision = "8b3147b013c651d5f017b31fa1225ae21e1dc93d"
+  version = "0.8.0"
+
+[[projects]]
   digest = "1:160eabf7a69910fd74f29c692718bc2437c1c1c7d4c9dea9712357752a70e5df"
   name = "github.com/gorilla/context"
   packages = ["."]
@@ -20,6 +31,10 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  input-imports = ["github.com/gorilla/mux"]
+  input-imports = [
+    "github.com/Lambda-NIC/faas-provider/auth",
+    "github.com/Lambda-NIC/faas-provider/types",
+    "github.com/gorilla/mux",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1

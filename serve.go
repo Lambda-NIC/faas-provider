@@ -8,9 +8,9 @@ import (
 	"log"
 	"net/http"
 
+	"github.com/Lambda-NIC/faas-provider/auth"
+	"github.com/Lambda-NIC/faas-provider/types"
 	"github.com/gorilla/mux"
-	"github.com/openfaas/faas-provider/auth"
-	"github.com/openfaas/faas-provider/types"
 )
 
 var r *mux.Router
@@ -25,7 +25,7 @@ func Router() *mux.Router {
 	return r
 }
 
-// Serve load your handlers into the correct OpenFaaS route spec. This function is blocking.
+// Serve load your handlers into the correct openfaas route spec. This function is blocking.
 func Serve(handlers *types.FaaSHandlers, config *types.FaaSConfig) {
 
 	if config.EnableBasicAuth {

@@ -5,3 +5,7 @@
 [[constraint]]
   name = "github.com/gorilla/mux"
   version = "1.6.2"
+
+[[constraint]]
+  name = "github.com/Lambda-NIC/faas-provider"
+  revision = "728ddc86dd95d6325f0af2b952dd0f8749b6b889"
